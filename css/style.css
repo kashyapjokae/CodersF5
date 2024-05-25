@@ -402,8 +402,9 @@ li {
 
 .list-section {
     text-align: right;
-    margin-right: 40px;
-    margin-top: 80px;
+    margin-right: 280px;
+    margin-top: 200px;
+    
 }
 
 .card-container {
@@ -454,7 +455,7 @@ li {
 }
 
 .list li:hover {
-    color: salmon;
+    color: #7B0323;
     /* Change text color on hover to wine color */
 }
 
@@ -569,9 +570,15 @@ li {
     padding: 5px;
     font-style: italic;
     /* Font Slant for items */
-    color: #bfe5ea;
-    /* Wine color */
+    color: #0e0121; /* White color */
+    /* Set font color to white */
 }
+
+.item:hover {
+    color: #800020; /* Wine color */
+}
+
+
 
 
 /* WebKit (Chrome, Safari, Opera) */
