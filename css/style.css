@@ -555,3 +555,38 @@
      color: #bfe5ea;
      /* Wine color */
  }
+
+ /* Wine color on hover for icons */
+
+ .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent; /* Set the background to transparent */
+    color: #333;
+}
+
+.footer .icon i:hover {
+    color: #800020; /* Wine color */
+}
+
+/* Circular shape for logo */
+.logo {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflowing content to maintain circular shape */
+    display: inline-block; /* Ensure the circular shape works properly */
+}
+
+/* Make the image inside the circular container fill it and maintain aspect ratio */
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove any default inline space */
+    border-radius: 50%; /* To ensure the image is displayed properly in a circle */
+}
+
+
+
