@@ -52,35 +52,31 @@
     </div>
 
     <header class="sidebar">
-        <div class="logo">
-            <img src="images/logo.jpg" alt="logo">
-            <h2>CodersF5</h2>
-        </div>
-        <div class="links">
-            <ul>
-                <li>
-                    <span>&#x1F4BB;</span>
-                    <a href="#" id="technology-link">Our Technologies</a>
-                </li>
-                <li>
-                    <span>&#x1F3C6;</span>
-                    <a href="#">Our Achievements</a>
-                </li>
-                <li>
-                    <span>&#x1F4AC;</span>
-                    <a href="#">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="logo">
+        <h2>CodersF5</h2>
+    </div>
+    <div class="links">
+        <ul>
+            <li>
+                <button class="slider-button" id="technology-link">Technologies</button>
+            </li>
+            <li>
+                <button class="slider-button" id="achievements-link">Achievements</button>
+            </li>
+            <li>
+                <button class="slider-button" id="contact-link">Contact Us</button>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    
     <div class="container">
-
-
-
         <section class="list-section" id="list-section">
             <h2>Technologies</h2>
             <div class="list-container">
-                <button id="scrollUp" class="scroll-button">&uarr;</button>
+                
                 <ul class="list">
                     <li>Java</li>
                     <li>HTML</li>
@@ -92,7 +88,7 @@
                     <li>JavaScript</li>
                     <li>jQuery</li>
                 </ul>
-                <button id="scrollDown" class="scroll-button">&darr;</button>
+               
             </div>
         </section>
 
@@ -102,27 +98,33 @@
                 <span class="line">"Empowering Coders"</span>
                 <span class="line">"Fueling Innovation"</span>
             </div>
+
+            <div class="scroll-container">
+                <div id="scrollLeft">&lt;&lt;</div>
+                <div class="items" id="itemsContainer">
+                    <div class="item">FrontEnd</div>
+                    <div class="item">BackEnd</div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 4</div>
+                    <div class="item">Item 5</div>
+                    <div class="item">Item 6</div>
+                    <div class="item">Item 7</div>
+                    <div class="item">Item 8</div>
+                    <div class="item">Item 9</div>
+                    <div class="item">Item 10</div>
+                    <div class="item">Item 11</div>
+                    <!-- Add more items as needed -->
+                </div>
+                <div id="scrollRight">&gt;&gt;</div>
+            </div>
+            
+            
+            
+
         </section>
 
         <!-- Second Page -->
-        <div id="scrollLeft">&lt;&lt;</div>
-        <div class="items" id="itemsContainer">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
-            <div class="item">Item 4</div>
-            <div class="item">Item 5</div>
-            <div class="item">Item 6</div>
-            <div class="item">Item 7</div>
-            <div class="item">Item 8</div>
-            <div class="item">Item 9</div>
-            <div class="item">Item 10</div>
-            <div class="item">Item 11</div>
-            <!-- Add more items as needed -->
-        </div>
-        <div id="scrollRight">&gt;&gt;</div>
-    </div>
-
+        
     <script>
         // JavaScript to toggle visibility of list section
         document.getElementById("technology-link").addEventListener("click", function(event) {
