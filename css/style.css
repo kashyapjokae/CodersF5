@@ -4,12 +4,12 @@
 
 #Company-logo {
     margin-top: 0.2rem;
-    color: #f05945;
+    color: #DB0B2B;
     width: 24rem;
 }
 
 #Landing-header-line {
-    background-color: #f05945;
+    background-color: #DB0B2B;
     height: 8px;
     margin-top: -0.1rem;
 }
@@ -47,12 +47,12 @@ li {
 }
 
 #left-content-landing-list li {
-    border-left: 1px solid salmon;
+    border-left: 1px solid #DB0B2B;
     padding: 5rem;
 }
 
 #right-content-landing-list li {
-    border-right: 1px solid salmon;
+    border-right: 1px solid #DB0B2B;
     padding: 5rem;
 }
 
@@ -75,7 +75,7 @@ li {
 }
 
 #Contact-us-btn {
-    color: #f05945;
+    color: #DB0B2B;
     border-radius: 5px;
     height: 3rem;
     width: 12rem;
@@ -83,7 +83,7 @@ li {
     margin-left: 6rem;
     box-shadow: 0px 1px whitesmoke;
     background: transparent;
-    border: 2px solid #f05945;
+    border: 2px solid #DB0B2B;
     opacity: 0;
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 1s;
@@ -92,7 +92,7 @@ li {
 }
 
 #Contact-us-btn:hover {
-    background-color: #f05945;
+    background-color: #DB0B2B;
     /* Change background color on hover */
     color: white;
     /* Change text color on hover */
@@ -103,12 +103,12 @@ li {
 }
 
 #left-content-landing-list li:hover {
-    color: #f05945;
+    color: #DB0B2B;
     /* Change color on hover */
 }
 
 #right-content-landing-list li:hover {
-    color: #f05945;
+    color: #DB0B2B;
     /* Change color on hover */
 }
 
@@ -200,7 +200,7 @@ li {
 }
 
 #company-name {
-    color: #f05945;
+    color: #DB0B2B;
     font-size: 2.5rem;
     font-weight: bold;
     animation: fadeInWelcome 1.5s ease-out forwards;
@@ -260,7 +260,7 @@ li {
 body {
     height: 100vh;
     width: 100%;
-    background-image: url("/images/background.jpg");
+    background-image: url("/images/23.jpg");
     background-position: center;
     background-size: cover;
 }
