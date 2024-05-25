@@ -1,0 +1,506 @@
+/* *{
+    border: 1px solid  grey ;
+ } */
+
+#Company-logo {
+    margin-top: 0.2rem;
+    color: #f05945;
+    width: 24rem;
+}
+
+#Landing-header-line {
+    background-color: #f05945;
+    height: 8px;
+    margin-top: -0.1rem;
+}
+
+#main-landing-content {
+    background-color: rgb(45 44 44);
+    display: flex;
+    justify-content: space-between;
+    height: 59rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: gainsboro;
+}
+
+.landing-content {
+    flex: 1;
+}
+
+.landing-technology {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.landing-technology li {
+    margin: 20px 0;
+}
+
+#left-content-landing-list li {
+    border-left: 1px solid salmon;
+    padding: 5rem;
+}
+
+#right-content-landing-list li {
+    border-right: 1px solid salmon;
+    padding: 5rem;
+}
+
+#left-content-landing {
+    width: 40.9%;
+}
+
+#right-content-landing {
+    width: 40.9%;
+}
+
+#left-content-landing-list {
+    text-align: left;
+    margin-left: 11rem;
+}
+
+#right-content-landing-list {
+    text-align: right;
+    margin-right: 11rem;
+}
+
+#Contact-us-btn {
+    color: #f05945;
+    border-radius: 5px;
+    height: 3rem;
+    width: 12rem;
+    margin-top: 6rem;
+    margin-left: 6rem;
+    box-shadow: 0px 1px whitesmoke;
+    background: transparent;
+    border: 2px solid #f05945;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+#Contact-us-btn:hover {
+    background-color: #f05945;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+#comapany-logo-img {
+    animation: dropFromTop 1s ease-out forwards;
+}
+
+#left-content-landing-list li:hover {
+    color: #f05945;
+    /* Change color on hover */
+}
+
+#right-content-landing-list li:hover {
+    color: #f05945;
+    /* Change color on hover */
+}
+
+@keyframes dropFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#Company-logo {
+    /* text-align: center; */
+    /* Center align the content inside the div */
+}
+
+
+/* ANIMATION */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#left-content-landing-list li {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+#right-content-landing-list li {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+#comapany-logo-img {
+    width: 100%;
+    height: 48%;
+    /* margin-left: 0rem; */
+}
+
+
+/* Existing styles */
+
+@keyframes fadeInWelcome {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#welcome-message {
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInWelcome 1s ease-out forwards;
+    animation-delay: 1s;
+    /* Delay to make sure other animations complete */
+    margin-top: 2rem;
+    /* Adjust as needed */
+}
+
+#company-name {
+    color: #f05945;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeInWelcome 1.5s ease-out forwards;
+    animation-delay: 1.5s;
+    /* Delay to make sure other animations complete */
+}
+
+
+/* Responsive Adjustments */
+
+@media screen and (max-width: 768px) {
+    #main-landing-content {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+        height: auto;
+        /* Allow content to expand vertically */
+    }
+    #left-content-landing,
+    #right-content-landing {
+        width: 100%;
+        /* Full width for smaller screens */
+        margin-left: 0;
+        /* Reset margin */
+        margin-right: 0;
+        /* Reset margin */
+    }
+    #left-content-landing-list,
+    #right-content-landing-list {
+        margin-left: 0;
+        /* Reset margin */
+        margin-right: 0;
+        /* Reset margin */
+        text-align: center;
+        /* Center align text */
+    }
+    .landing-technology li {
+        padding: 2rem;
+        /* Adjust padding for smaller screens */
+    }
+    #Contact-us-btn {
+        margin: 2rem auto;
+        /* Center the button */
+    }
+}
+
+
+/* Importing Google font - Poppins */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+    overflow-y: auto;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+
+.logo img {
+    width: 43px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+
+.sidebar:hover .logo h2 {
+    display: block;
+}
+
+.sidebar .links ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 4px;
+    /* Add margin between list items */
+}
+
+.links li:hover {
+    background: #fff;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}
+
+
+/*main  */
+
+section {
+    margin-top: 80px;
+}
+
+.card-container {
+    position: relative;
+    /* Set position relative for absolute positioning */
+    margin-top: 20px;
+    /* Adjust top margin as needed */
+}
+
+.card-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.list-container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline;
+    position: absolute;
+}
+
+.scroll-button:focus {
+    outline: none;
+}
+
+#scrollUp {
+    top: 10px;
+    right: -40px;
+    /* Adjust right position */
+}
+
+#scrollDown {
+    bottom: 10px;
+    right: -40px;
+    /* Adjust right position */
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 40px;
+    font-family: "Candy Cane", cursive;
+    /* Use Candy Cane font */
+    color: #00008B;
+    /* Dark blue color */
+}
+
+.slogan {
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* Shift slogan 20px to the right */
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    /* Gradient background */
+    padding: 10px;
+    /* Add padding for better readability */
+    border-radius: 8px;
+    /* Add border radius for rounded corners */
+}
+
+.line {
+    font-size: 18px;
+    color: #fff;
+    /* White color for text */
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Align containers in the center horizontally */
+    padding-top: 20px;
+    /* Adjust padding as needed */
+}
+
+.items {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    /* Adjust width as needed */
+}
+
+.item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    /* Adjust margin as needed */
+    padding: 5px;
+    font-style: italic;
+    /* Font Slant for items */
+}
+
+#scrollLeft,
+#scrollRight {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+#scrollLeft:hover,
+#scrollRight:hover {
+    transform: scale(1.1);
+    content: '🌹';
+    /* Red rose emoji */
+    margin-left: 5px;
+    /* Adjust margin as needed */
+    font-size: 18px;
+    /* Adjust font size as needed */
+    color: red;
+    /* Red color for the rose emoji */
+    /* Scale effect on hover */
+}
+
+
+/* Adjust the position of scroll buttons */
+
+#scrollLeft {
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
+
+#scrollRight {
+    margin-left: 10px;
+    /* Adjust margin as needed */
+}

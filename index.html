@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Page Background Image Example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="main-landing-content" class=" ">
+        <!-- Left Side landing div -->
+        <div class=" " id="left-content-landing">
+            <ul class="landing-technology" id="left-content-landing-list">
+                <li>
+                    Website Development
+                </li>
+                <li>
+                    Website Desgining
+                </li>
+            </ul>
+        </div>
+
+        <!-- Company Logo and Contact Us button -->
+        <div id="Company-logo">
+            <!-- Welcome Message and Company Name -->
+            <div id="welcome-message">
+                <p>Welcome to</p>
+                <h1 id="company-name">Coders F5</h1>
+            </div>
+            <img src="/images/LogoCode.png" id="comapany-logo-img">
+            <button id="Contact-us-btn">Contact Us</button>
+        </div>
+        <!-- Right Side landing div -->
+        <div class=" " id="right-content-landing">
+            <ul class="landing-technology" id="right-content-landing-list">
+                <li>
+                    Mobile App Development
+                </li>
+                <li>
+                    Real Time Database
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="sidebar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo">
+            <h2>CodersF5</h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <span>&#x1F4BB;</span>
+                    <a href="#" id="technology-link">Our Technologies</a>
+                </li>
+                <li>
+                    <span>&#x1F3C6;</span>
+                    <a href="#">Our Achievements</a>
+                </li>
+                <li>
+                    <span>&#x1F4AC;</span>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div id="Landing-header-line"></div>
+
+
+        <section class="list-section" id="list-section">
+            <h2>Technologies</h2>
+            <div class="list-container">
+                <button id="scrollUp" class="scroll-button">&uarr;</button>
+                <ul class="list">
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>C#</li>
+                    <li>PostgreSQL</li>
+                    <li>SQL</li>
+                    <li>DBMS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+                <button id="scrollDown" class="scroll-button">&darr;</button>
+            </div>
+        </section>
+
+        <section class="header-section">
+            <h4 class="main-heading">We are<br>Coders F5</h4>
+            <div class="slogan">
+                <span class="line">"Empowering Coders"</span>
+                <span class="line">"Fueling Innovation"</span>
+            </div>
+        </section>
+
+        <!-- Second Page -->
+        <div id="scrollLeft">&lt;&lt;</div>
+        <div class="items" id="itemsContainer">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+            <div class="item">Item 9</div>
+            <div class="item">Item 10</div>
+            <div class="item">Item 11</div>
+            <!-- Add more items as needed -->
+        </div>
+        <div id="scrollRight">&gt;&gt;</div>
+    </div>
+
+    <script>
+        // JavaScript to toggle visibility of list section
+        document.getElementById("technology-link").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            var listSection = document.getElementById("list-section");
+            listSection.style.display = listSection.style.display === "none" ? "block" : "none";
+        });
+    </script>
+
+
+</body>
+
+</html>
