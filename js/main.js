@@ -1,3 +1,32 @@
+document.getElementById('scrollLeft').addEventListener('click', function() {
+    scrollItems('left');
+});
+
+document.getElementById('scrollRight').addEventListener('click', function() {
+    scrollItems('right');
+});
+
+function scrollItems(direction) {
+    const itemsContainer = document.getElementById('itemsContainer');
+    const itemWidth = itemsContainer.querySelector('.item').offsetWidth;
+    const containerWidth = itemsContainer.offsetWidth;
+    const scrollAmount = itemWidth * 5; // Scroll by the width of 5 items
+
+    if (direction === 'left') {
+        itemsContainer.scrollLeft -= scrollAmount;
+    } else if (direction === 'right') {
+        itemsContainer.scrollLeft += scrollAmount;
+    }
+}
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const contactBtn = document.getElementById("Contact-us-btn");
   const section = document.querySelector(".container");
@@ -24,29 +53,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const itemsContainer = document.getElementById('itemsContainer');
-  const scrollRight = document.getElementById('scrollRight');
-  const scrollLeft = document.getElementById('scrollLeft');
-  
-  let scrollAmount = 0;
-  const scrollStep = 100;
-  
-  // Scroll right button functionality
-  scrollRight.addEventListener('click', () => {
-      scrollAmount += scrollStep;
-      itemsContainer.scrollTo({
-          left: scrollAmount,
-          behavior: 'smooth'
-      });
-  });
-  
-  // Scroll left button functionality
-  scrollLeft.addEventListener('click', () => {
-      scrollAmount -= scrollStep;
-      itemsContainer.scrollTo({
-          left: scrollAmount,
-          behavior: 'smooth'
-      });
-  });
-});
+
+
+
+
+function scrollItems(direction) {
+    const itemsContainer = document.getElementById('itemsContainer');
+    const scrollAmount = 100; // Adjust this value to change the scroll amount
+
+    if (direction === 'left') {
+        itemsContainer.scrollLeft -= scrollAmount;
+    } else if (direction === 'right') {
+        itemsContainer.scrollLeft += scrollAmount;
+    }
+}

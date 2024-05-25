@@ -378,6 +378,7 @@ body {
     position: relative;
     margin-top: 0px;
     text-align: left;
+    
 }
 
 .card-container h2 {
@@ -399,6 +400,7 @@ body {
     justify-content: flex-end;
     margin-top: 20px; /* Adjust margin-top for the list container */
     text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .list {
@@ -414,7 +416,7 @@ body {
 }
 
 .list li:hover {
-    color: #670a0a; /* Change text color on hover to wine color */
+    color: salmon; /* Change text color on hover to wine color */
 }
 
 .scroll-button {
@@ -431,21 +433,23 @@ body {
 
 
 
-
 .main-heading {
     text-align: center;
     font-size: 3em;
-    margin-top: 120px;
-    margin-left: -20px; /* Adjust the margin-left property */
+    margin-top: 60px;
+    margin-left: 30px ;
     font-family: "Candy Cane", cursive;
     color: #00008B;
 }
 
 
 
+
+
+
 .slogan {
     text-align: center;
-    margin-top: 0px; /* Adjust the top margin */
+    margin-top: 40px; /* Adjust the top margin */
     margin-left: 0;
     background: linear-gradient(to right, #FFD700, #FFA500);
     padding: 10px;
@@ -497,25 +501,37 @@ body {
     /* Adjust font size as needed */
 }
 
+.scroll-container {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+}
+
+#scrollLeft,
+#scrollRight {
+    cursor: pointer;
+}
+
 .items {
     display: flex;
     gap: 10px;
     /* Adjust gap between items */
     overflow-x: auto;
     /* Allow horizontal scrolling */
-    max-width: calc(100% - 50px);
-    /* Adjust maximum width to accommodate scroll buttons */
-    padding: 0 5px;
-    /* Add padding to the items container */
+    padding: 0;
+    /* Remove default padding */
+    margin: 20;
+    /* Remove default margin */
+    list-style: none;
+    /* Remove default bullet points */
 }
 
-.items .item {
+.item {
     flex-shrink: 0;
     /* Prevent items from shrinking */
     padding: 5px;
     font-style: italic;
     /* Font Slant for items */
     color: #bfe5ea; /* Wine color */
-    margin-left: -20px; /* Move items 20px to the left */
 }
 
