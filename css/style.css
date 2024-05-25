@@ -299,6 +299,8 @@ li {
     display: none;
 }
 
+
+
 .sidebar:hover .logo h2 {
     display: block;
 }
@@ -700,3 +702,17 @@ footer{
         margin: 4px;
     }
 }
+
+
+h2.design {
+    /* Add your styles here */
+    font-size: 24px;
+    font-weight: bold;
+    color: #800020; /* Wine color */
+    margin-top: 20px; /* Add top margin */
+    margin-left: 10px; /* Shift 10 pixels right */
+    /* Add any other styles you want */
+}
+
+
+
