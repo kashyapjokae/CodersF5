@@ -299,8 +299,6 @@ li {
     display: none;
 }
 
-
-
 .sidebar:hover .logo h2 {
     display: block;
 }
@@ -406,7 +404,6 @@ li {
     text-align: right;
     margin-right: 280px;
     margin-top: 200px;
-    
 }
 
 .card-container {
@@ -572,15 +569,15 @@ li {
     padding: 5px;
     font-style: italic;
     /* Font Slant for items */
-    color: #0e0121; /* White color */
+    color: #0e0121;
+    /* White color */
     /* Set font color to white */
 }
 
 .item:hover {
-    color: #800020; /* Wine color */
+    color: #800020;
+    /* Wine color */
 }
-
-
 
 
 /* WebKit (Chrome, Safari, Opera) */
@@ -615,104 +612,118 @@ li {
     background: salmon;
 }
 
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-footer{
+
+footer {
     background-color: #f4eaeaef;
 }
-.footerContainer{
+
+.footerContainer {
     width: 100%;
-    padding: 70px 30px 20px ;
+    padding: 70px 30px 20px;
 }
-.socialIcons{
+
+.socialIcons {
     display: flex;
     justify-content: center;
 }
-.socialIcons a{
+
+.socialIcons a {
     text-decoration: none;
-    padding:  10px;
+    padding: 10px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
 }
-.socialIcons a i{
+
+.socialIcons a i {
     font-size: 2em;
     color: black;
-    opacity: 0,9;
+    opacity: 0, 9;
 }
+
+
 /* Hover affect on social media icon */
-.socialIcons a:hover{
-    background-color:#7B0323;
+
+.socialIcons a:hover {
+    background-color: #7B0323;
     transition: 0.5s;
 }
-.socialIcons a:hover i{
+
+.socialIcons a:hover i {
     color: white;
     transition: 0.5s;
 }
-.footerNav{
+
+.footerNav {
     margin: 30px 0;
 }
-.footerNav ul{
+
+.footerNav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
-.footerNav ul li a{
-    color:white;
+
+.footerNav ul li a {
+    color: white;
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
     opacity: 0.7;
     transition: 0.5s;
-
 }
-.footerNav ul li a:hover{
+
+.footerNav ul li a:hover {
     opacity: 1;
 }
-.footerBottom{
+
+.footerBottom {
     background-color: #7B0323;
     padding: 20px;
     text-align: center;
 }
-.footerBottom p{
+
+.footerBottom p {
     color: white;
 }
-.designer{
+
+.designer {
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
 }
-@media (max-width: 700px){
-    .footerNav ul{
+
+@media (max-width: 700px) {
+    .footerNav ul {
         flex-direction: column;
-    } 
-    .footerNav ul li{
-        width:100%;
+    }
+    .footerNav ul li {
+        width: 100%;
         text-align: center;
         margin: 10px;
     }
-    .socialIcons a{
+    .socialIcons a {
         padding: 8px;
         margin: 4px;
     }
 }
 
-
 h2.design {
     /* Add your styles here */
     font-size: 24px;
     font-weight: bold;
-    color: #800020; /* Wine color */
-    margin-top: 20px; /* Add top margin */
-    margin-left: 10px; /* Shift 10 pixels right */
+    color: #800020;
+    /* Wine color */
+    margin-top: 20px;
+    /* Add top margin */
+    margin-left: 10px;
+    /* Shift 10 pixels right */
     /* Add any other styles you want */
 }
-
-
-
