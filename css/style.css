@@ -245,7 +245,7 @@ li {
     position: fixed;
     top: 0;
     left: 0;
-    width: 110px;
+    width: 70px;
     height: 100%;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(17px);
@@ -256,7 +256,7 @@ li {
 }
 
 .sidebar:hover {
-    width: 260px;
+    width: 160px;
 }
 
 .sidebar .logo {
@@ -375,21 +375,23 @@ li {
 .container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
-    margin-top: 80px;
-    /* Add top margin */
+    margin-right: 0px;
+    margin-top: 0px;
+    /* Add top margin */    
 }
 
 .list-section {
     text-align: right;
-    margin-right: 280px;
-    margin-top: 200px;
+    margin-right: 0px;
+    margin-top: 250px;
 }
 
 .card-container {
     position: relative;
     margin-top: 0px;
     text-align: left;
+    margin-left: 100px;
+    
 }
 
 .card-container h2 {
@@ -397,13 +399,14 @@ li {
     margin-bottom: 10px;
     color: black;
     margin-top: 10px;
+    
     /* Adjust margin-top for the h2 */
 }
 
 .list-container {
-    width: 300px;
-    border: 1px solid #670a0a;
-    border-radius: 8px;
+    width: 250px;
+    border: 3px solid #670a0a;
+    border-radius: 15px;
     padding: 5px 10px;
     /* Adjust padding for the list container */
     overflow: hidden;
@@ -599,50 +602,37 @@ li {
 }
 
 
+
 /* For small screens */
 @media screen and (max-width: 768px) {
-    .sidebar {
-      display: none;
-    }
     .container {
-      padding-top: 20px; /* Adjust as needed */
-      padding-right: 40px; /* Add padding to the right */
-      padding-left: 10px; /* Add padding to the left */
-      box-sizing: border-box; /* Include padding in total width */
-      overflow-x: hidden; /* Hide content that overflows the container */
+      justify-content: center; /* Center the container horizontally */
+      padding: 20px; /* Add padding to all sides */
+      margin-right: 500px; /* Remove right margin */
     }
     .list-section {
       text-align: center;
+      margin: 20px; /* Add margin to all sides */
     }
-    .header-section {
-      text-align: center;
-      padding: 20px;
+    .card-container {
+      margin-left: 0; /* Remove left margin */
+      margin-top: 0; /* Remove top margin */
+    }
+    .slogan {
+      margin-top: 20px; /* Adjust top margin */
     }
     .scroll-container {
-      display: block;
-      overflow-x: auto;
-      white-space: nowrap;
-      width: auto;
-      margin: 0;
-    }
-    #scrollLeft,
-    #scrollRight {
-      display: none;
+      justify-content: center; /* Center the scroll container horizontally */
     }
   }
   
   /* For larger screens */
   @media screen and (min-width: 769px) {
     .list-section {
-      float: left;
-      width: 50%;
-    }
-    .header-section {
-      float: left;
-      width: 50%;
-      padding: 50px;
+      margin-right: 280px; /* Keep the right margin for larger screens */
     }
   }
+  
     
 footer {
     background-color: #f4eaeaef;
