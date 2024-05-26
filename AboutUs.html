@@ -82,6 +82,58 @@
                 margin-right: 10px;
                 color: #e74d06;
             }
+            /* For screens smaller than 768px (e.g., smartphones) */
+/* For screens smaller than 390px (e.g., smartphones) */
+/* For screens smaller than 880px */
+@media screen and (max-width: 880px) {
+    .about-left {
+        display: none; /* Hide the left image */
+    }
+
+    .about-right {
+        width: 100%; /* Make the right content full width */
+    }
+
+    .address,
+    .expertise {
+        margin-top: 30px;
+    }
+
+    .address ul,
+    .expertise ul {
+        padding-left: 0;
+    }
+
+    .address li,
+    .expertise li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .address-logo,
+    .expertise-logo {
+        margin-right: 10px;
+    }
+}
+
+/* For screens larger than 880px */
+@media screen and (min-width: 880px) {
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about-left {
+        display: block; /* Show the left image */
+        flex: 0 0 40%;
+    }
+
+    .about-right {
+        flex: 0 0 55%;
+    }
+}
         </style>
     </head>
 
@@ -110,7 +162,7 @@
                             </span>
                             <p>Address</p>
                             <span class="saprater">:</span>
-                            <p> Chandigarh, India</p>
+                            <p>Cityscape, North east, Calgary (AB), CANADA</p>
                         </li>
                         <li>
                             <span class="address-logo">
@@ -118,7 +170,7 @@
                             </span>
                             <p>Phone No</p>
                             <span class="saprater">:</span>
-                            <p>+91 000-000-0000</p>
+                            <p>+91 701-532-581 , +91 988-893-3280</p>
                         </li>
                         <li>
                             <span class="address-logo">
@@ -126,7 +178,7 @@
                             </span>
                             <p>Email ID</p>
                             <span class="saprater">:</span>
-                            <p>abc@gmail.com</p>
+                            <p>info@codersf5.com</p>
                         </li>
                     </ul>
                 </div>

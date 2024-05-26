@@ -1,3 +1,4 @@
+/* Existing styles */
 #Company-logo {
     margin-top: 0.2rem;
     color: #f05945;
@@ -84,14 +85,11 @@ li {
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 1s;
     transition: background-color 0.3s ease;
-    /* Smooth transition */
 }
 
 #Contact-us-btn:hover {
     background-color: #f05945;
-    /* Change background color on hover */
     color: white;
-    /* Change text color on hover */
 }
 
 #comapany-logo-img {
@@ -100,12 +98,10 @@ li {
 
 #left-content-landing-list li:hover {
     color: #f05945;
-    /* Change color on hover */
 }
 
 #right-content-landing-list li:hover {
     color: #f05945;
-    /* Change color on hover */
 }
 
 @keyframes dropFromTop {
@@ -132,7 +128,6 @@ li {
     /* text-align: center; */
     /* Center align the content inside the div */
 }
-
 
 /* ANIMATION */
 
@@ -172,7 +167,6 @@ li {
     /* margin-left: 0rem; */
 }
 
-
 /* Existing styles */
 
 @keyframes fadeInWelcome {
@@ -204,23 +198,35 @@ li {
     /* Delay to make sure other animations complete */
 }
 
+/* Responsive Styles */
+
+@media screen and (max-width: 700px) {
+    #main-landing-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        height: auto; /* Auto height */
+        padding: 20px; /* Adjust padding */
+    }
+
+    #left-content-landing,
+    #right-content-landing {
+        width: 100%; /* Full width on small screens */
+    }
+
+    #left-content-landing-list,
+    #right-content-landing-list {
+        margin: 0; /* Remove margin */
+        padding: 0 20px; /* Add padding */
+    }
+
+    #Contact-us-btn {
+        margin-top: 2rem; /* Adjust top margin */
+        margin-left: 0; /* Center horizontally */
+    }
+}
+
 
 /* Responsive Adjustments */
 
-@media screen and (max-width: 768px) {
-    #main-landing-content {
-        display: flex;
-        flex-direction: column;
-    }
-    #left-content-landing, #right-content-landing {
-        width: 100%;
-        text-align: center;
-    }
-    #Company-logo {
-        text-align: center;
-        margin-top: 20px;
-    }
-}
 
 
 /* Importing Google font - Poppins */
@@ -604,36 +610,72 @@ li {
 
 
 /* For small screens */
-@media screen and (max-width: 768px) {
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+/* For screens smaller than 768px */
+@media screen and (max-width: 700px) {
     .container {
-      justify-content: center; /* Center the container horizontally */
-      padding: 20px; /* Add padding to all sides */
-      margin-right: 500px; /* Remove right margin */
+        position: relative; /* Ensure relative positioning for absolute positioning of children */
+        justify-content: center; /* Center the container horizontally */
+        padding: 20px; /* Adjust padding */
+        margin: 0; /* Remove all margins */
     }
     .list-section {
-      text-align: center;
-      margin: 20px; /* Add margin to all sides */
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 250px;
+        position: absolute; /* Use absolute positioning */
+        left: 90px; /* Shift the list to the right */
     }
+
     .card-container {
-      margin-left: 0; /* Remove left margin */
-      margin-top: 0; /* Remove top margin */
+        margin: 0; /* Remove all margins */
+        padding: 8px;
+        margin: 4px;
     }
     .slogan {
-      margin-top: 20px; /* Adjust top margin */
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        padding: 4px;
+        margin: 4px;
     }
     .scroll-container {
-      justify-content: center; /* Center the scroll container horizontally */
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        font-size: 14px; /* Adjust the font size as needed */
+        position: absolute; /* Use absolute positioning */
+        left: 5px; /* Shift the list to the right */
     }
-  }
-  
-  /* For larger screens */
-  @media screen and (min-width: 769px) {
-    .list-section {
-      margin-right: 280px; /* Keep the right margin for larger screens */
-    }
-  }
-  
     
+}
+
+
+
+
+/* For larger screens */
+@media screen and (min-width: 769px) {
+    .list-section {
+        margin-right: 280px; /* Keep the right margin for larger screens */
+    }
+}
+
+
 footer {
     background-color: #f4eaeaef;
 }
@@ -716,30 +758,17 @@ footer {
     margin: 0px 5px;
 }
 
-@media (max-width: 700px) {
-    .footerNav ul {
+@media (max-width: 700px){
+    .footerNav ul{
         flex-direction: column;
-    }
-    .footerNav ul li {
-        width: 100%;
+    } 
+    .footerNav ul li{
+        width:100%;
         text-align: center;
         margin: 10px;
     }
-    .socialIcons a {
+    .socialIcons a{
         padding: 8px;
         margin: 4px;
     }
-}
-
-h2.design {
-    /* Add your styles here */
-    font-size: 24px;
-    font-weight: bold;
-    color: #800020;
-    /* Wine color */
-    margin-top: 20px;
-    /* Add top margin */
-    margin-left: 10px;
-    /* Shift 10 pixels right */
-    /* Add any other styles you want */
 }
