@@ -209,36 +209,16 @@ li {
 
 @media screen and (max-width: 768px) {
     #main-landing-content {
+        display: flex;
         flex-direction: column;
-        /* Stack elements vertically on smaller screens */
-        height: auto;
-        /* Allow content to expand vertically */
     }
-    #left-content-landing,
-    #right-content-landing {
+    #left-content-landing, #right-content-landing {
         width: 100%;
-        /* Full width for smaller screens */
-        margin-left: 0;
-        /* Reset margin */
-        margin-right: 0;
-        /* Reset margin */
-    }
-    #left-content-landing-list,
-    #right-content-landing-list {
-        margin-left: 0;
-        /* Reset margin */
-        margin-right: 0;
-        /* Reset margin */
         text-align: center;
-        /* Center align text */
     }
-    .landing-technology li {
-        padding: 2rem;
-        /* Adjust padding for smaller screens */
-    }
-    #Contact-us-btn {
-        margin: 2rem auto;
-        /* Center the button */
+    #Company-logo {
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
@@ -618,6 +598,52 @@ li {
     box-sizing: border-box;
 }
 
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+    .container {
+      padding-top: 20px; /* Adjust as needed */
+      padding-right: 40px; /* Add padding to the right */
+      padding-left: 10px; /* Add padding to the left */
+      box-sizing: border-box; /* Include padding in total width */
+      overflow-x: hidden; /* Hide content that overflows the container */
+    }
+    .list-section {
+      text-align: center;
+    }
+    .header-section {
+      text-align: center;
+      padding: 20px;
+    }
+    .scroll-container {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: auto;
+      margin: 0;
+    }
+    #scrollLeft,
+    #scrollRight {
+      display: none;
+    }
+  }
+  
+  /* For larger screens */
+  @media screen and (min-width: 769px) {
+    .list-section {
+      float: left;
+      width: 50%;
+    }
+    .header-section {
+      float: left;
+      width: 50%;
+      padding: 50px;
+    }
+  }
+    
 footer {
     background-color: #f4eaeaef;
 }
