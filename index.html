@@ -2,195 +2,951 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodersF5</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="icon" type="image/png" href="/images/new.png">
-    <title>Full-Page Background Image Example</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>CodersF5</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/img/codersf5.png">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/contactus.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <!-- Include the EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </head>
 
 <body>
-    <!-- Header Row line -->
-    <div id="Landing-header-line"></div>
-    <!-- Landing Page -->
-    <div id="main-landing-content" class=" ">
-        <!-- Left Side landing div -->
-        <div class=" " id="left-content-landing">
-            <ul class="landing-technology" id="left-content-landing-list">
-                <li>
-                    Website Development
-                </li>
-                <li>
-                    Website Desgining
-                </li>
-            </ul>
-        </div>
-        <!-- Company Logo and Contact Us button -->
-        <div id="Company-logo">
-            <!-- Welcome Message and Company Name -->
-            <div id="welcome-message">
-                <p></p>
-                <h1 id="company-name"></h1>
-            </div>
-            <img src="/images/new.png" id="comapany-logo-img">
-            <a href="/ContactUs.html">
-                <button id="Contact-us-btn">Contact Us</button>
-            </a>
-
-        </div>
-        <!-- Right Side landing div -->
-        <div class=" " id="right-content-landing">
-            <ul class="landing-technology" id="right-content-landing-list">
-                <li>
-                    Mobile App Development
-                </li>
-                <li>
-                    Real Time Database
-                </li>
-            </ul>
-        </div>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@codersf5.com">info@codersf5.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+447523126868</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.facebook.com/profile.php?id=61559798055113" class="facebook" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+         <a href="https://www.instagram.com/f5coders?igsh=MW9wajM0ZjFncXpjdg==" class="instagram" target="_blank">
+          <i class="bi bi-instagram"></i></a> 
+        <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" class="linkedin" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        
+      </div>
     </div>
-    <div class="main-div">
-        <header class="sidebar">
-            <div class="logo">
-                <img src="images/new.png" alt="logo">
-                <h2>CodersF5</h2>
-            </div>
-            <div class="links side-bar-list">
+  </section>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><img src="/assets/img/codersf5.png"><a href="index.html">
+          <spans> </spans>CodersF5<span></span>
+        </a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                    <li>
-                        <button class="slider-button" id="technology-link">Technologies</button>
-                    </li>
-                    <li>
-                        <button class="slider-button" id="achievements-link">Achievements</button>
-                    </li>
-                    <li>
-
-                        <button class="slider-button" id="contact-link">About Us</button>
-                    </li>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-            </div>
-        </header>
-
-
-        <div class="container">
-
-            <section class="list-section" id="list-section">
-                <h2>Technologies</h2>
-                <div class="list-container">
-
-                    <ul class="list">
-
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>BootStrap</li>
-                        <li>JavaScript</li>
-                        <li>JQuery</li>
-                        <li>ReactJS</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>.Net WebForm</li>
-                        <li>.Net MVC</li>
-                        <li>.Net Core</li>
-                        <li>.Net WebApi</li>
-                        <li>.Net Blazor</li>
-                        <li>LinQ</li>
-                        <li>Entity Framework</li>
-                        <li>.Net Version upto..8</li>
-                        <li>n-Layer Architecture</li>
-                        <li>Azure DevOps</li>
-                        <li>Postgres</li>
-                        <li>SQL</li>
-                        <li>MS SQL</li>
-                        <li>Flutter</li>
-                        <li>Dart</li>
-                        <li>Kotlin</li>
-
-
-                    </ul>
-
-                </div>
-            </section>
-
-            <section class="header-section">
-                <div class="slogan">
-                    <span class="line">"Empowering Coders"</span>
-                    <span class="line">"Fueling Innovation"</span>
-                </div>
-                <h2 class="design">Revolutionizing industries with advanced software technologies</h2>
-                <div class="scroll-container" style="display: flex; align-items: center;">
-                    <div id="scrollLeft" style="cursor: pointer; user-select: none;">&lt;&lt;</div>
-                    <div class="items" id="itemsContainer" style="display: flex; overflow-x: auto; white-space: nowrap; width: 300px; margin: 0 10px;">
-                        <div class="item" style="display: inline-block; padding: 10px;">FrontEnd</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">BackEnd</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">Web Desgining</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">Mobile Designing</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">MobileApp Development</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">DataBase</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">Hosting</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">Cloud Hosting</div>
-                        <div class="item" style="display: inline-block; padding: 10px;">Deploying personalized server</div>
-
-                        <!-- Add more items as needed -->
-                    </div>
-                    <div id="scrollRight" style="cursor: pointer; user-select: none;">&gt;&gt;</div>
-                </div>
-            </section>
-
-
-
-        </div>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
     </div>
+  </header><!-- End Header -->
 
-    <!-- Footer Page -->
-    <footer>
-        <div class="footerContainer">
-            <div class="socialIcons">
-                <a href="https://www.facebook.com/profile.php?id=61559798055113"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>CodersF5</span></h1>
+      <h2>Our team of talented designers specializes in creating websites and mobile apps using the latest technology.
+      </h2>
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const button = document.querySelector("#hero .btn-get-started");
+      button.addEventListener("mouseover", function () {
+      button.classList.remove("jiggling");
+        void button.offsetWidth;
+        button.classList.add("jiggling");
+      });
+    });
+  </script>
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box frontend" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="icon"> <i class="fa-solid fa-globe fa-beat fa-2x service-icon frontend-icon";></i>
+                <script src="https://kit.fontawesome.com/690698900c.js" crossorigin="anonymous"></script>
             </div>
+            
+              <h4 class="title"><a>Frontend Technology</a></h4>
+              <p class="description">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box backend" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fa-solid fa-shield-halved fa-flip fa-2x service-icon backend-icon" ></i>
+                <script src="https://kit.fontawesome.com/690698900c.js" crossorigin="anonymous"></script>
+              </div>
+              <h4 class="title"><a>Backend Technology</a></h4>
+              <p class="description">
+              <ul>
+                <li>C#</li>
+                <li>LINQ (Language Integrated Query)</li>
+                <li>Entity Framework</li>
+                <li>SOLID Principles</li>
+                <li>.NET Core</li>
+                <li>MVC (Model-View-Controller)</li>
+                <li>WebAPI</li>
+                <li>Blazor</li>
+                <li>WebForm</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>FastAPI</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box mobile" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="fa-solid fa-mobile fa-shake fa-2x service-icon mobile-icon" ></i>
+                <script src="https://kit.fontawesome.com/690698900c.js" crossorigin="anonymous"></script>
+              </div>
+              <h4 class="title"><a>Mobile Development</a></h4>
+              <p class="description">
+              <ul>
+                <li>Dart & Kotlin</li>
+                <li>Flutter Framework</li>
+                <li>React Native Framework</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box devops" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="fa-solid fa-database fa-beat-fade fa-2x service-icon devops-icon"></i>
+                <script src="https://kit.fontawesome.com/690698900c.js" crossorigin="anonymous"></script>
+              </div>
+              <h4 class="title"><a>DevOps & Database</a></h4>
+              <p class="description">
+              <ul>
+                <li>Azure</li>
+                <li>Jenkins</li>
+                <li>Docker</li>
+                <li>PostgreSQL</li>
+                <li>SQL (Structured Query Language)</li>
+                <li>MSSQL (Microsoft SQL Server)</li>
+                <li>Cloud Storage</li>
+                <li>MongoDB</li>
+              </ul>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="footerBottom">
-            <p>Copyright &copy; 2024; Designed by <span class="designer">CODERS F5</span></p>
+      </div>
+    </section>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3>About CodersF5</h3>
+          <p>
+            CodersF5, a dynamic UK-based venture, partners closely with Triitans to offer avant-garde solutions. While
+            both excel across diverse technologies independently, for major projects, we unite our expertise,
+            functioning seamlessly as a cohesive unit. This collaboration not only leverages our individual strengths
+            but also fosters a familial synergy, ensuring unparalleled innovation and client satisfaction.
+          </p>
+          <p>
+            Understanding unique client needs, our diverse team ensures effective solutions. Passion, experience, and
+            innovation are our strengths in tackling challenges.
+          </p>
+          <p> Hurray! Let's conquer new heights together!</p>
         </div>
-    </footer>
-    
+
+        <!-- <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-store-alt"></i>
+                <div>
+                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Jquery <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">React <i class="val">87%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Next.js <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">C# <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">.Net Core <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">.Net MVC <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> .Net Web API<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Django<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Fast API<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Flutter <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
 
 
 
+          </div>
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"> Kotlin<i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Dart<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4380" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+
+        <!-- <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div> -->
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <h3>Check our <span>Services</span></h3>
+          <p>Empowering businesses with custom digital solutions, from software and web development to hosting and
+            cybersecurity, ensuring success.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Web Development</a></h4>
+              <p>Our team designs and develops websites and web applications that are visually appealing, user-friendly,
+                and optimized for performance across various devices and platforms.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Mobile App Development</a></h4>
+              <p>We specialize in building mobile applications for iOS and Android platforms, leveraging the latest
+                technologies and design principles to deliver seamless user experiences.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">E-commerce Solutions</a></h4>
+              <p> Our e-commerce solutions encompass everything from website design to payment gateway integration,
+                providing businesses with a robust online platform to showcase and sell their products or services</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">UI/UX Design</a></h4>
+              <p>We focus on creating engaging and intuitive user interfaces (UI) coupled with exceptional user
+                experiences (UX) to ensure that your digital products resonate with your target audience and drive user
+                engagement</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Cloud Solutions</a></h4>
+              <p> Our cloud services offer scalable and flexible computing resources, storage options, and
+                infrastructure solutions to help businesses streamline operations, improve agility, and reduce costs.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Support and Maintenance</a></h4>
+              <p>We offer ongoing technical support, software updates, and maintenance services to ensure the continued
+                reliability, security, and performance of your IT systems and applications.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Hosting Solutions</a></h4>
+              <p>We offer hosting solutions where we can set up and manage servers for your systems or procure servers
+                on your behalf, ensuring reliable hosting services to keep your applications and websites running
+                smoothly and securely</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">IT Consulting</a></h4>
+              <p>Our team of experts provides strategic IT consulting services to help businesses align technology
+                initiatives with their overall business objectives, optimize IT infrastructure, and drive digital
+                transformation.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Digital Marketing</a></h4>
+              <p>We employ a comprehensive digital marketing strategy, including search engine optimization (SEO),
+                search engine marketing (SEM), social media marketing, and content marketing, to increase brand
+                visibility, generate leads, and drive conversions</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>"Got questions? Reach out to us! Contact us for any queries or assistance. We're here to help! 📧📞
+            #GetInTouch #CustomerSupport"</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>63 Haynes Road,MK429PG,Bedford</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@codersf5.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+447523126868</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0"
+              src="https://maps.google.com/maps?q=63+Haynes+Road%2CMK429PG%2CBedford&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+
+          <div class="col-lg-6">
+            <div role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="FirstName" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" id="message-contact" placeholder="Message"
+                  required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                <button class="button" id="sendButton" style="--clr: #00ad54;">
+                  <span class="button-decor"></span>
+                  <div class="button-content">
+                    <div class="button__icon">
+                      <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                        <circle opacity="0.5" cx="25" cy="25" r="23"
+                          fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                        <mask id="icon-payments-cat_svg__a" fill="#fff">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                          </path>
+                        </mask>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z"
+                          fill="#fff"></path>
+                        <path
+                          d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z"
+                          fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                        <defs>
+                          <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25"
+                            y2="48" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                            <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span class="button__text">Submit</span>
+                  </div>
+                </button>
+
+              </div>
+              <div id="popup" class="popup">
+                <div class="popup-content">
+                  <span class="close">&times;</span>
+                  <p>Submitted successfully!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>CodersF5<span>.</span></h3>
+            <p>
+              63 Haynes Road <br>
+              MK429PG,Bedford<br>
+              UK <br><br>
+              <strong>Phone:</strong> +447523126868<br>
+              <strong>Email:</strong> info@codersf5.com<br>
+            </p>
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+ -->
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Triitans Solitaire </h3>
+              <p>
+                Triitans Solitaire
+                is our
+                India Based Company
+
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Stay connected with us through our social media channels. Follow us for updates, news, and more!</p>
+
+            <div class="social-links mt-3">
+              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+              <a href="https://www.facebook.com/profile.php?id=61559798055113" class="facebook"><i
+                  class="bx bxl-facebook"></i></a>
+
+              <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright @2024<strong> <span> </span>CodersF5</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed & Developed by CodersF5 Team
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
 <script>
-    document.getElementById("scrollLeft").addEventListener("click", function() {
-        document.getElementById("itemsContainer").scrollBy({
-            top: 0,
-            left: -200, // Adjust this value as needed
-            behavior: 'smooth'
+  $(document).ready(function () {
+    $('#sendButton').click(function () {
+      // Get form data
+      let firstName = $('#FirstName').val();
+      let email = $('#email').val();
+      let message = $('#message-contact').val();
+
+      // Initialize EmailJS with your user ID
+      emailjs.init('YYnO6MoABJgVY9wmI');
+
+      // Send email
+      emailjs.send('service_gfa69tm', 'template_aqauddq', {
+        to_name: "Codef5",
+        from_name: firstName + " Email: " + email,
+        message: message
+      })
+        .then(function (response) {
+          console.log('Email sent successfully:', response);
+          // Clear form fields after successful submission
+          $('#FirstName').val('');
+          $('#email').val('');
+          $('#message-contact').val('');
+          // Show the popup
+          $('#popup').css('display', 'block');
+        }, function (error) {
+          console.error('Email sending failed:', error);
         });
     });
 
-    document.getElementById("scrollRight").addEventListener("click", function() {
-        document.getElementById("itemsContainer").scrollBy({
-            top: 0,
-            left: 200, // Adjust this value as needed
-            behavior: 'smooth'
-        });
+    // Close the popup when the close button is clicked
+    $('.close').click(function () {
+      $('#popup').css('display', 'none');
     });
+  });
+
 </script>

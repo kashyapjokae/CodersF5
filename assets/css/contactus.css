@@ -1,0 +1,87 @@
+.button {
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-decor {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button__icon {
+    width: 48px;
+    height: 40px;
+    background-color: var(--clr);
+    display: grid;
+    place-items: center;
+  }
+  
+  .button__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  
+  .button:hover .button__text {
+    color: #fff;
+  }
+  
+  .button:hover .button-decor {
+    transform: translate(0);
+  }
+
+
+
+  .popup {
+    display: none; /* Hide the popup by default */
+    position: fixed; /* Position the popup */
+    top: 50%; /* Center the popup vertically */
+    left: 50%; /* Center the popup horizontally */
+    transform: translate(-50%, -50%); /* Center the popup */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure the popup is on top of other elements */
+  }
+  
+  .popup-content {
+    background-color: #fefefe; /* Popup background color */
+    padding: 20px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  }
+  
+  .close {
+    float: right; /* Align the close button to the right */
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .close:hover {
+    color: #f00; /* Change close button color on hover */
+  }
+  
