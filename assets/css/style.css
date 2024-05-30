@@ -1922,3 +1922,45 @@ section {
     padding: 2px 0;
   }
 }
+
+
+/*--------------------------------------------------------------
+# For About Text
+--------------------------------------------------------------*/
+
+.about {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.section-title h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: #6c757d;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#typed {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
